@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharacterDetailActivity"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="Magneto"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/white"
+                android:fontFamily="cursive"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:src="@drawable/ic_magneto"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descriçao"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/white"
+                android:fontFamily="cursive"
+                app:layout_constraintTop_toBottomOf="@+id/image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="rfrevwedwc"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/descricao"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:id="@+id/Serie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Séres e Filmes"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/white"
+                android:fontFamily="cursive"
+                app:layout_constraintTop_toBottomOf="@+id/description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/series"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Avengers"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/Serie"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
