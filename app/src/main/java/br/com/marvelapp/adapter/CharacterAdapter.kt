@@ -34,7 +34,7 @@ class CharacterAdapter (private val characters: List<CharacterMarvel>) : Recycle
 
         val image = item.findViewById<ImageView>(R.id.image)
         val name = item.findViewById<TextView>(R.id.name)
-        val botom = item.findViewById<Button>(R.id.btnversobre)
+        val botom = item.findViewById<TextView>(R.id.btnVermais)
 
         fun addItem( character : CharacterMarvel) {
             name.text = character.name
