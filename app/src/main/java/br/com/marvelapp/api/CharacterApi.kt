@@ -1,4 +1,4 @@
-package br.com.marvelapp.api
+package br.com.marvelapp.adapter.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

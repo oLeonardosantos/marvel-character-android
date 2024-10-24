@@ -1,4 +1,4 @@
-package br.com.marvelapp.api
+package br.com.marvelapp.adapter.api
 
 import br.com.marvelapp.models.CharacterResponse
 import retrofit2.Response
